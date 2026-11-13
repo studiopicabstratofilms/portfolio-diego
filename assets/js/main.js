@@ -310,6 +310,7 @@ $(function () {
         var em = document.querySelector('.hero-copy h1 em');
         var intro = document.querySelector('.hero-intro');
         if (!em || !intro) return;
+        if (window.innerWidth < 992) { intro.style.maxWidth = ''; intro.style.width = ''; return; }
         var w = Math.round(em.getBoundingClientRect().width);
         if (w > 0) { intro.style.maxWidth = w + 'px'; intro.style.width = w + 'px'; }
     }
