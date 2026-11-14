@@ -446,3 +446,22 @@ a.is-pending{opacity:.4;cursor:default}
   #projectModal .project-detail-copy p{font-size:12.5px!important;line-height:1.5}
   #projectModal .modal-close{width:34px;height:34px;top:10px;right:10px}
 }
+/* Janela de vídeo no celular: tudo numa tela só, sem rolagem */
+@media (max-width:767px){
+  #projectModal .modal-dialog{margin:8px auto;max-width:calc(100% - 16px);min-height:0;align-items:center}
+  #projectModal .modal-content{max-height:calc(100dvh - 16px);overflow:hidden}
+  #projectModal .modal-body{padding:0;overflow:hidden}
+  #projectModal .video-pane{height:min(50dvh,440px)!important}
+  #projectModal .video-pane.is-horizontal{height:auto!important}
+  #projectModal .project-detail-copy{padding:12px 16px 14px!important}
+  #projectModal .project-detail-copy .modal-kicker{font-size:8.5px!important}
+  #projectModal .project-detail-copy h2{font-size:1.25rem!important;margin:4px 0 4px!important}
+  #projectModal .project-detail-copy p{font-size:11.5px!important;line-height:1.35!important;margin:0 0 8px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  #projectModal .project-facts{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px!important;padding:8px 0 0!important}
+  #projectModal .project-facts>div{padding:0!important;border:0!important;margin:0!important}
+  #projectModal .project-facts dt{font-size:8px!important}
+  #projectModal .project-facts dd{font-size:11.5px!important;margin:2px 0 0!important}
+  #projectModal .detail-tags{display:none!important}
+  #projectModal .modal-links{display:flex!important;flex-wrap:wrap;gap:6px 16px;margin:0!important}
+  #projectModal .modal-links a{font-size:9.5px!important;letter-spacing:.08em}
+}
