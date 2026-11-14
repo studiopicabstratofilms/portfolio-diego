@@ -465,3 +465,7 @@ a.is-pending{opacity:.4;cursor:default}
   #projectModal .modal-links{display:flex!important;flex-wrap:wrap;gap:6px 16px;margin:0!important}
   #projectModal .modal-links a{font-size:9.5px!important;letter-spacing:.08em}
 }
+@media (max-width:767px){
+  #projectModal .modal-dialog{display:flex!important;align-items:center;justify-content:center;min-height:calc(100dvh - 16px)!important;margin:8px auto!important}
+  #projectModal .modal-content{width:100%}
+}
